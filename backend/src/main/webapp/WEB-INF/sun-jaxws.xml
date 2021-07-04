@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints
+        xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+        version="2.0">
+    <endpoint
+            name="Home"
+            implementation="pl.edu.pb.wi.ws.SystemStatusServiceImpl"
+            url-pattern="/home"/>
+    <endpoint
+            name="User"
+            implementation="pl.edu.pb.wi.ws.auth.UserServiceImpl"
+            url-pattern="/user"/>
+    <endpoint
+            name="Team"
+            implementation="pl.edu.pb.wi.ws.auth.TeamServiceImpl"
+            url-pattern="/user/team"/>
+    <endpoint
+            name="Pokedex"
+            implementation="pl.edu.pb.wi.ws.pokedex.PokedexServiceImpl"
+            url-pattern="/pokedex"/>
+    <endpoint
+            name="Images"
+            implementation="pl.edu.pb.wi.ws.pokedex.ImageServiceImpl"
+            url-pattern="/pokedex/images"/>
+    <endpoint name="Evolutions"
+              implementation="pl.edu.pb.wi.ws.pokedex.EvolutionServiceImpl"
+              url-pattern="/pokedex/evolutions"/>
+</endpoints>
